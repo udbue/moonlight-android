@@ -729,4 +729,6 @@
 
     <string name="title_checkbox_full_screen">Enable Full Screen</string>
     <string name="summary_checkbox_full_screen">Hide system bars with immersive mode</string>
+	<string name="summary_enable_hdr_sdr_10bit">Request a 10-bit stream even on SDR displays. On handheld SDR panels Nova will prefer a 10-bit SDR stream when the host supports Main10.</string>
+    <string name="badge_hdr">HDR</string>
 </resources>
