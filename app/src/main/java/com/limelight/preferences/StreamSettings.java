@@ -635,7 +635,7 @@ public class StreamSettings extends AppCompatActivity {
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
                 LimeLog.info("Excluding HDR toggle based on OS");
                 PreferenceCategory category =
-                        (PreferenceCategory) findPreference("category_stream_quality");
+                        (PreferenceCategory) findPreference("category_video_settings");
                 category.removePreference(findPreference("checkbox_enable_hdr"));
             }
             else {
@@ -653,7 +653,7 @@ public class StreamSettings extends AppCompatActivity {
                     }
                 }
                 PreferenceCategory category =
-                        (PreferenceCategory) findPreference("category_stream_quality");
+                        (PreferenceCategory) findPreference("category_video_settings");
                 CheckBoxPreference hdrPref = (CheckBoxPreference) category.findPreference("checkbox_enable_hdr");
 
                 if (!foundHdr10 && hdrPref != null) {
