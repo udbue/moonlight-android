@@ -26,8 +26,7 @@ jobs:
       run: chmod +x gradlew
 
     - name: Build Debug APKs
-      run: ./gradlew assembleRelease -Pandroid.injected.abi.list=arm64-v8a
-
+      run: ./gradlew assembleRelease
     - name: Upload Finished APKs
       uses: actions/upload-artifact@v4
       with:
