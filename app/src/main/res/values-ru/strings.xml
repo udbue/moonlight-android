@@ -163,6 +163,7 @@
     <string name="summary_disable_frame_drop">Может уменьшить микрозависания на некоторых устройствах, но также увеличить задержку</string>
     <string name="title_enable_hdr">Включить HDR (Экспериментально)</string>
     <string name="summary_enable_hdr">Потоковая передача с HDR, когда игра и графический процессор ПК поддерживают эту функцию. Для HDR требуется графический процессор с поддержкой кодирования HEVC Main 10.</string>
+    <string name="summary_enable_hdr_sdr_10bit">Запрашивать 10-битный поток даже на SDR-дисплеях. На устройствах с SDR-панелями Artemis будет отдавать приоритет 10-битному SDR-потоку, если хост поддерживает профиль Main10.</string>
     <string name="title_enable_post_stream_toast">Показывать отчёт о задержке после трансляции</string>
     <string name="summary_enable_post_stream_toast">Отобразить сообщение с информацией о задержке после окончания трансляции</string>
     <string name="summary_hide_osc_when_has_gamepad">Скрывать экранные кнопки при подключённом физическом контроллере</string>
