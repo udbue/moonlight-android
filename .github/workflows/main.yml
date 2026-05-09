@@ -1,0 +1,36 @@
+name: Build Artemis APK
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch: # This adds a "Run workflow" button in GitHub so you can trigger it manually!
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Source Code
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive # CRITICAL: Artemis needs this to download the core streaming engine
+
+    - name: Set up Java
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17' # Android builds require Java 17 now
+        distribution: 'temurin'
+        cache: gradle # Speeds up the build by saving downloads
+
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+
+    - name: Build Debug APKs
+      run: ./gradlew assembleDebug
+
+    - name: Upload Finished APKs
+      uses: actions/upload-artifact@v4
+      with:
+        name: Artemis-Modified-APKs
+        path: app/build/outputs/apk/**/*.apk # Grabs Root, Non-Root, and all other variations
+        if-no-files-found: error
