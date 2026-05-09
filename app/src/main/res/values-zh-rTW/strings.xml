@@ -306,6 +306,7 @@
 	<string name="summary_video_format">若裝置支援，較新的編碼器可降低影片頻寬需求。若主機軟體或 GPU 不支援，編碼器選擇可能被忽略。</string>
 	<string name="title_enable_hdr">啟用 HDR（實驗性）</string>
 	<string name="summary_enable_hdr">當遊戲與電腦 GPU 支援時，串流 HDR。HDR 需要支援 HEVC Main 10 編碼的 GPU。</string>
+	<string name="summary_enable_hdr_sdr_10bit">即使在 SDR 顯示器上也會要求 10-bit 串流。在配備 SDR 面板的裝置上，若主機支援 Main10，Artemis 將優先選擇 10-bit SDR 串流。</string>
 	<string name="title_full_range">強制全範圍影像（實驗性）</string>
 	<string name="summary_full_range">若您的裝置無法正確顯示全範圍影像內容，將導致明暗區域細節流失。</string>
 	<string name="title_prevent_packet_loss">防止封包遺失</string>
